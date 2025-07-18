@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS SELECTOR</title>
+    <style>
+        /* CSS SELECTOR */
+        .red {
+            background-color: gray;
+
+        }
+
+        /* ID SELECTOR */
+        #blue {
+            background-color: red;
+            color: blue;
+        }
+
+        /* child selector { */
+        div>p {
+         background-color: brown;   color: rgb(226, 148, 119);
+        }
+        /*descendant selector */
+        div p {
+            color: rgb(0, 211, 56);
+        }
+        /* universal selector */
+        *{
+            max-width:20;
+            padding: 20;
+        }
+        /*pseudo selector */
+        a:visited{
+            color: yellow;
+        }
+        a :active{
+            color: red;
+        }
+
+
+    </style>
 </head>
+
 <body>
-    
+    <div class="red">
+        i am a div
+        <p>i am a para inside a div then child selector will held</p>
+    </div>
+    <a href="https://www.google.com"> go to google</a>
+
+
 </body>
+
 </html>
