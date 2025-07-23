@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        /*the specificity of a selector is 1*/
+        h1 {
+            color: blueviolet;
+        }
+        
+        /*the specificity of a selector is 10*/
+        h1.yellow {
+            color: yellow;
+        }
+
+        /*the specificity of a selector is 10*/
+        .cred {
+            color: crimson;
+        }
+
+        /*the specificity of a selector is 10*/
+        
+        /* this is the eg of atribute selector .specifiation is 10 */
+        [data-x=a] {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <p>cascode algo</p>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">css specification</h1>
+    </div>
+</body>
+
+</html>
