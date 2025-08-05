@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            justify-content: center;
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: flex-start;
+            flex-flow: row row-reverse;
+            /* ther is no justify item in flex box */
+            gap: 30px;
+            row-gap: 20px;
+            column-gap: 10px;
+           
+        }
+        .item{
+            flex-grow: 5;
+            width: 32px;
+            height: 32px;
+            background-color: #3498db;
+            border: 2px solid solid black;
+            margin: 4px;
+        }
+        .order-1{
+            order: 2;
+        }  
+        /* flex-shrink  */
+        /* align-self */
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item order-1">5</div>
+             <div class="item">6</div>
+             <div class="item">1</div>
+           
+          
+        </div>
+    </main>
+    
+</body>
+</html>
