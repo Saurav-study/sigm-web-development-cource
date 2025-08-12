@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>makeing a navbar using flexbox</title>
+    <style>
+       *{
+        background-color: whitesmoke;
+        margin: 0;
+        padding: 0;
+       }
+       header{
+        background-color: #1a1a1a;
+        height: 80px;
+        width: 100%;
+       }
+       nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+       }
+       li{
+        list-style: none;
+        color: black;
+        font-size: 18px;
+        margin-right: 20px;
+       }
+       li img{
+        margin-right: 50px;
+        margin-top: 10px;
+       }
+       ul{
+        display: flex;
+        align-items: center;
+       }
+         ul li a{
+          text-decoration: none;
+          color: white;
+         }
+         ul li a:hover{
+             color: #f0f0f0;
+            }
+         ul li:hover{
+            color: red;
+         }  
+         
+         body{
+            font-family: Arial, sans-serif;
+            color: rgb(72, 170, 48);
+         }
+         
+         
+        
+    </style>
+</head>
+<body>
+      <header>
+        <main>
+            <nav>
+                <ul>
+                    <li><img src="logo.webp" height="60px" width="160px" alt=""></li>
+                    <li>Products ^</li>
+                    <li>Pricing ^</li>
+                    <li>Resources ^</li>
+                    <li>About us ^</li>
+                    <li>Security and compliance</li>
+                    <li><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/" target="_blank"><img src="translate.webp" height="20px" width="20px" alt=""></a></li>
+                </ul>
+            </nav>
+        </main>
+    </header>
+</body>
+</html>
