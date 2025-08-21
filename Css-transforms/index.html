@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TRansform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border: 2px solid black;
+            /* transform: rotate(40deg); */
+            transform: translateY(100%) skew(40deg) translateX(40%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* u can't skew on z axis, only x and y
+            transform: skewX(20deg) skewY(10deg); */
+        }
+
+        .container {
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+
+</body>
+
+</html>
