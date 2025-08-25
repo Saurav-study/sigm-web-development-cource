@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       * {
+      margin: 0;
+      padding: 0;
+    }
+section {
+      margin: 30px 20px;
+    }
+    section .container {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+    .container .logo {
+      font-size: 40px;
+    }
+    .container h3 {
+      font-size: 25px;
+      font-weight: 300;
+    }
+    .container p a {
+      text-decoration: none;
+      color: black;
+    }
+    main {
+      max-width: 70vw;
+      margin: auto;
+    }
+    .main-container {
+      display: grid;
+      gap: 20px 10px;
+      justify-items: center;
+      align-items: center;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .gray-container {
+      background-color: #f9f9f9;
+      height: 160px;
+      width: 300px;
+      text-align: center;
+      border-radius: 10px;
+    }
+    .gray-container h2 {
+      padding: 20px;
+      font-size: 22px;
+      font-weight: 00;
+    }
+    .gray-container button {
+      padding: 8px 14px;
+      border: none;
+      border-radius: 6px;
+      margin-top: 25px;
+    }
+    .gray-container div .greenBtn {
+      background-color: #5cb85c;
+    }
+    .gray-container div .blueBtn {
+      background-color: #01b7d3;
+    }
+    .gray-container button a {
+      text-decoration: none;
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    @media screen and (max-width: 1154px) {
+      .main-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .main-container {
+        grid-template-columns: 1fr;
+      }
+    }
+</style>
+</head>
+<body>
+     <section>
+      <div class="container">
+        <span class="logo"><i class="fa-solid fa-bomb"></i></span>
+        <h3>Download UltraEdit</h3>
+        <p>
+          v2024.1 (released 2024-09-30) | <a href="/">Hotfix information</a>
+        </p>
+      </div>
+    </section>
+
+    <main>
+      <div class="main-container">
+        <div class="gray-container">
+          <h2>English</h2>
+          <p>English</p>
+          <div>
+            <button type="button" class="blueBtn">
+              <a href="./ue_english_64.exe">Download 32-bit</a>
+            </button>
+            <button type="button" class="greenBtn">
+              <a href="./ue_english_64.exe">Download 64-bit</a>
+            </button>
+          </div>
+        </div>
+         </div>
+    </main>
+    
+</body>
+</html>

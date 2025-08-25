@@ -1,75 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>makeing a navbar using flexbox</title>
     <style>
-       *{
-        background-color: whitesmoke;
-        margin: 0;
-        padding: 0;
-       }
-       header{
-        background-color: #1a1a1a;
-        height: 80px;
-        width: 100%;
-       }
-       nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 20px;
-       }
-       li{
-        list-style: none;
-        color: black;
-        font-size: 18px;
-        margin-right: 20px;
-       }
-       li img{
-        margin-right: 50px;
-        margin-top: 10px;
-       }
-       ul{
-        display: flex;
-        align-items: center;
-       }
-         ul li a{
-          text-decoration: none;
-          color: white;
-         }
-         ul li a:hover{
-             color: #f0f0f0;
-            }
-         ul li:hover{
+        * {
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            height: 80px;
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        li {
+            list-style: none;
+            color: black;
+            font-size: 18px;
+            margin-right: 20px;
+        }
+
+        li img {
+            margin-right: 50px;
+            margin-top: 10px;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        ul li a:hover {
+            color: #f0f0f0;
+        }
+
+        ul li:hover {
             color: red;
-         }  
-         
-         body{
+        }
+
+        body {
             font-family: Arial, sans-serif;
-            color: rgb(72, 170, 48);
-         }
-         
-         
+          
+        }
         
+        .first {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 23px;
+            margin: 70px;
+            font-family: sans-serif
+        }
+        .first span{
+           font-size: 40px;
+        }
+        section span img{
+            width: 82px;
+            margin: 0 23px;
+        }
+        .first p{
+            font-size: 23px;
+            width: 74vw;
+            text-align: center;
+
+        }
+        .first button{
+            background-color: #00b6d1;
+            padding: 14px 16px;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+        }
+
     </style>
 </head>
+
 <body>
-      <header>
+    <header>
         <main>
             <nav>
                 <ul>
-                    <li><img src="logo.webp" height="60px" width="160px" alt=""></li>
+                    <li><img src="kkkkk.png" height="60px" width="160px" alt=""></li>
                     <li>Products ^</li>
                     <li>Pricing ^</li>
                     <li>Resources ^</li>
                     <li>About us ^</li>
                     <li>Security and compliance</li>
-                    <li><a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/" target="_blank"><img src="translate.webp" height="20px" width="20px" alt=""></a></li>
+                    <li><a href="kkkkk.png"></a></li>
                 </ul>
             </nav>
         </main>
-    </header>
+        <section class="first">
+            <span> Download <b>UltraEdit</b> for Windows
+                <img  width="39px" src="Reviews.png" alt="" ></span>
+               <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor.</p>
+               <button>
+                Download Mac or Linux version
+               </button>
+                
+        </section>
+
+
+
+
+
 </body>
+
 </html>

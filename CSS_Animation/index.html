@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Animation</title>
+    <style>
+        * {
+            background-color: pink;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+
+            width: 40vw;
+            height: 80vh;
+        }
+
+        .box {
+            color: red;
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+            /* animation: sauravkaAnimations;
+            animation-duration: 0.7s;
+            animation-iteration-count: infinite;
+           animation-timing-function: 
+cubic-bezier(0.13, 0.24, 1, 1);
+ animation-direction: alternate-reverse; 
+animation-play-state: paused; at when u type paused it will pause at run position: ; */
+animation: sauravkaAnimations 1s cubic-bezier(0, 0.24, 1, 1) 1s 1 alternate-reverse,
+           saurav2 3s cubic-bezier(0, 0.24, 1, 1) 1s 1 alternate-reverse;
+
+
+        }
+
+        @keyframes sauravkaAnimations {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: rgb(255, 255, 0);
+                transform: translateX(1000px);
+            }
+
+        }
+        @keyframes saurav2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(220deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(310deg);
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+    </div>
+
+</body>
+
+</html>
