@@ -1,0 +1,97 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 8px;
+    color: #aaaaaa;
+}
+
+.container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    max-width: 1100px;
+    padding: 20px;
+}
+
+.card {
+    background: #1e1e1e;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    padding: 18px;
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.card h3 {
+    margin: 15px 0 8px;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #bbbbbb;
+    margin: 0;
+}
+
+/* Filters */
+.img1 {
+    filter: blur(8px);
+}
+
+.img2 {
+    filter: brightness(1.4) contrast(0.9);
+}
+
+.img3 {
+    filter: invert(0.9);
+}
+
+/* Hover removes filters */
+.card img:hover {
+    filter: none;
+    transform: scale(1.04);
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: auto;
+}
