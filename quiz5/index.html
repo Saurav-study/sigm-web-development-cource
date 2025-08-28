@@ -2,88 +2,162 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UltraEdit Download</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <!-- Header -->
     <header>
         <nav>
-            <img src="kkkkk.png" alt="Logo">
-            <ul>
-                <li>Products ▾</li>
-                <li>Pricing ▾</li>
-                <li>Resources ▾</li>
-                <li>About Us ▾</li>
-                <li>Security & Compliance</li>
+            <a href="#">
+                <img src="kkkkk.png" alt="UltraEdit Logo" class="logo" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="#">Products ▾</a></li>
+                <li><a href="#">Pricing ▾</a></li>
+                <li><a href="#">Resources ▾</a></li>
+                <li><a href="#">About Us ▾</a></li>
+                <li><a href="#">Security & Compliance</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="first">
-        <span>Download <b>UltraEdit</b> for Windows
-            <img src="Reviews.png" alt="">
-        </span>
-        <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text
-            editor.</p>
-        <button class="btn blue">Download Mac or Linux version
-
-        </button>
+    <section class="hero">
+        <h1>
+            Download <strong>UltraEdit</strong> for Windows
+            <img src="Reviews.png" alt="User Reviews" />
+        </h1>
+        <p>
+            Download and try UltraEdit before you buy it! This download includes the
+            full Windows version of the text editor.
+        </p>
+        <button class="btn blue">Download Mac or Linux version</button>
     </section>
 
     <!-- Download Section -->
-    <section class="second">
-        <div class="download">
-            <img src="download.jfif" alt="">
-            <span>Download UltraEdit</span>
-            <span class="small">v2025.0.0.39 (released 2025-08-06) | Latest changes</span>
+    <section class="downloads">
+        <div class="download-header">
+            <img src="download.jfif" alt="Download Icon" />
+            <div>
+                <h2>Download UltraEdit</h2>
+                <p class="version">
+                    v2025.0.0.39 (Released 2025-08-06) | <a href="#">Latest changes</a>
+                </p>
+            </div>
         </div>
+
         <div class="grid">
-           
-             <div class="item">
-                <div class="item-lang">English</div>
-                <button class="green">Download 64-bit</button>
-            </div>
-             <div class="item">
-                <div class="item-lang">Deutsch</div>
-                <button class="green">Download 64-bit</button>
-            </div>
-             <div class="item">
-                <div class="item-lang">Italiano</div>
-                <button class="green">Download 64-bit</button>
-            </div>
-             <div class="item">
-                <div class="item-lang">Español</div>
-                <button class="green">Download 64-bit</button>
-            </div>
-             <div class="item">
-                <div class="item-lang">français</div>
-                <button class="green">Download 64-bit</button>
-            </div>
-             <div class="item">
-                <div class="item-lang">Português brasileiro</div>
-                <button class="green">Download 64-bit</button>
-            </div>
+            <!-- English -->
             <div class="item">
-                <div class="item-lang">日本</div>
-                <button class="green">Download 64-bit</button>
+                <div class="item-lang">English</div>
+                <button class="btn green">Download 64-bit</button>
+                <p class="hash">
+                    <strong>SHA256:</strong><br />
+                    FC88DD0B44CF0A7DE31AE2C413D145E351ACCA7A6E7DF4A44BC4A34E5184378E
+                </p>
             </div>
+
+            <!-- German -->
+            <div class="item">
+                <div class="item-lang">Deutsch</div>
+                <small class="sub">German</small>
+                <button class="btn green">Download 64-bit</button>
+                <p class="hash">
+                    <strong>SHA256:</strong><br />
+                    3652B8B1A9D20F9779E2C6A4CBF3DBEA46BE184BD7B99E9E2366ECC45819F845
+                </p>
+            </div>
+
+            <!-- Italian -->
+            <div class="item">
+                <div class="item-lang">Italiano</div>
+                <small class="sub">Italian</small>
+                <button class="btn green">Download 64-bit</button>
+                <p class="hash">
+                    <strong>SHA256:</strong><br />
+                    BAF3CBC4AB8E4425B2D0DE0235CA9C749C91E57B07D82524E06CF76AE46C45DC
+                </p>
+            </div>
+
+            <!-- Spanish -->
+            <div class="item">
+                <div class="item-lang">Español</div>
+                <small class="sub">Spanish</small>
+                <button class="btn green">Download 64-bit</button>
+                <p class="hash">
+                    <strong>SHA256:</strong><br />
+                    0A791D355F3B9B08F6A8D3987FA524AA4C8FBEA8974FF197F67BAC529873B956
+                </p>
+            </div>
+
+            <!-- French -->
+            <div class="item">
+                <div class="item-lang">Français</div>
+                <small class="sub">French</small>
+                <button class="btn green">Download 64-bit</button>
+                <p class="hash">
+                    <strong>SHA256:</strong><br />
+                    0137310489EECFB5CCA5951586967E3934BE5C8DE43059AE082402ECDEF68459
+                </p>
+            </div>
+
+            <!-- Brazilian Portuguese -->
+            <div class="item">
+                <div class="item-lang">Português brasileiro</div>
+                <small class="sub">Brazilian Portuguese</small>
+                <button class="btn green">Download 64-bit</button>
+                <p class="hash">
+                    <strong>SHA256:</strong><br />
+                    4A92218408CFD5DC2000B38E7371FAE718C722A96B296067A282DCE7E601B74F
+                </p>
+            </div>
+
+            <!-- Japanese -->
+            <div class="item">
+                <div class="item-lang">日本語</div>
+                <small class="sub">Japanese</small>
+                <button class="btn green">Download 64-bit</button>
+                <p class="hash">
+                    <strong>SHA256:</strong><br />
+                    696614BAF75279E067E4D7B2C8DD2EF9175B66708D14DFBE880CC998D4C948C2
+                </p>
+            </div>
+
+            <!-- Korean -->
             <div class="item">
                 <div class="item-lang">한국어</div>
-                <button class="green">Download 64-bit</button>
+                <small class="sub">Korean</small>
+                <button class="btn green">Download 64-bit</button>
+                <p class="hash">
+                    <strong>SHA256:</strong><br />
+                    0A443FB65801651373704EB957A98FB074738AB93907089D88046F7414CD43F4
+                </p>
             </div>
+
+            <!-- Simplified Chinese -->
             <div class="item">
-                <div class="item-lang">华语</div>
-                <button class="green">Download 64-bit</button>
+                <div class="item-lang">简体中文</div>
+                <small class="sub">Simplified Chinese</small>
+                <button class="btn green">Download 64-bit</button>
+                <p class="hash">
+                    <strong>SHA256:</strong><br />
+                    90859CA326C03423967AF3664305D39EA5332C2EF37F0ED46159EE8163AFAD4A
+                </p>
             </div>
-             <div class="item">
-                <div class="item-lang">華語</div>
-                <button class="green">Download 64-bit</button>
+
+            <!-- Traditional Chinese -->
+            <div class="item">
+                <div class="item-lang">繁體中文</div>
+                <small class="sub">Traditional Chinese</small>
+                <button class="btn green">Download 64-bit</button>
+                <p class="hash">
+                    <strong>SHA256:</strong><br />
+                    9A0EE6B3DC3BA1D8EBC99CEA2C5C9BDB624DD53C1695E749EA82EFFD38FD56F8
+                </p>
             </div>
         </div>
     </section>
