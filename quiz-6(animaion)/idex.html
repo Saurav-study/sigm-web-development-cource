@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zig-Zag Ball Motion</title>
+  <style>
+    .container {
+      height: 800px;
+      width: 900px;
+      background: linear-gradient(to bottom, #aab9aa, #024202);
+      border: 2px solid black;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .circle {
+      background: radial-gradient(circle at 30% 30%, #ff4d4d, #b30000);
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6),
+                  inset 0 0 15px rgba(255, 255, 255, 0.3);
+      position: absolute;
+      animation: zigzag 8s infinite linear;
+    }
+
+    @keyframes zigzag {
+      0%   { transform: translate(0, 0); }                                    /* top-left */
+      25%  { transform: translate(calc(900px - 80px), calc(800px - 80px)); }  /* bottom-right */
+      50%  { transform: translate(0, calc(800px - 80px)); }                   /* bottom-left */
+      75%  { transform: translate(calc(900px - 80px), 0); }                   /* top-right */
+      100% { transform: translate(0, 0); }                                    /* back to top-left */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="circle"></div>
+  </div>
+</body>
+
+</html>
